@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feed Back</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="services.html">Services</a>
+      <a href="car-sales.html">Car Sales</a>
+      <a href="car-maintenance.html">Car Maintenance</a>
+      <a href="car-imports.html">Car Imports</a>
+    </div>
+  </div>
+  <a href="contact-us.html">Contact Us</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+<div class="sidebar">
+  <a href="index.html">HOME</a>
+  <a href="car-sales.html">Car Sales</a>
+  <a href="car-maintenance.html">Car Maintenance</a>
+  <a href="car-imports.html">Car Imports</a>
+</div>
+<div class="content">
+<div class="row">
+  <div id="carSales">
+    <form  method="post" >
+        <div class="container">
+            <h1>Leave Feedback</h1>
+            <p>Please fill in this form to leave feedback.</p>
+            <hr>
+            <label for="email"><b>Name</b></label>
+            <input type="text" placeholder="Enter Email" name="email" >
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" >
+
+            <label for="feedback"><b>Feedback</b></label>
+            <textarea type="text" name"feedback" ></textarea>
+           
+           
+            <hr>
+           
+
+            <input type="button" onclick="alert('Feedback submitted successfully.')"
+             class="registerbtn" value="submit">
+             <input type="reset" onclick="location.href = 'index.html';"  class="registerbtn"  value="Reset">
+        </div>
+        
+        
+        </form>
+    
+  </div>
+ 
+  
+</div>
+
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+
+</html>

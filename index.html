@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  
+
+<div class="navbar">
+  
+  <a href="about.html">About</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="services.html">Services</a>
+      <a href="car-sales.html">Car Sales</a>
+      <a href="car-maintenance.html">Car Maintenance</a>
+      <a href="car-imports.html">Car Imports</a>
+    </div>
+  </div>
+  <a href="contact-us.html">Contact Us</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+
+<div class="sidebar">
+  <a href="index.html">HOME</a>
+  <a href="car-sales.html">Car Sales</a>
+  <a href="car-maintenance.html">Car Maintenance</a>
+  <a href="car-imports.html">Car Imports</a>
+</div>
+
+
+
+<div class="content">
+<div class="row">
+  
+ 
+    <div id="homeImageContainer" class="fakeimg" >
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="images/vehicle.jpg" style="width:100%">
+      <img class="mySlides" src="images/repair.jpg" style="width:100%">
+      <img class="mySlides" src="images/car2.jpg" style="width:100%">
+      <img class="mySlides" src="images/car3.jpg" style="width:100%">
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    </div>
+   
+  
+</div>
+<div class="row">
+  <div class="main">
+    <h1>Second Hand Cars - Home</h1>
+  
+    <p>Welcome to our Home Page</p>
+    <p>We here at Second Hand Cars sell the best and well used vehicles imported from japan and china.</p>
+    <p>Our Cars have the lowest Odometer reading.</p>
+    
+  </div>
+  <div class="side">
+    <h2>Our Car Lot</h2>
+   
+    <img id="carLotImage" style="height: 200px" src="images/car-lot.jpg">
+  </div>
+  
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</div>
+</body>
+</html>

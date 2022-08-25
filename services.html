@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     <a href="services.html">Services</a>
+      <a href="car-sales.html">Car Sales</a>
+      <a href="car-maintenance.html">Car Maintenance</a>
+      <a href="car-imports.html">Car Imports</a>
+    </div>
+  </div>
+  <a href="contact-us.html">Contact Us</a>
+  
+</div>
+<div class="sidebar">
+  <a href="index.html">HOME</a>
+  <a href="car-sales.html">Car Sales</a>
+  <a href="car-maintenance.html">Car Maintenance</a>
+  <a href="car-imports.html">Car Imports</a>
+</div>
+<div class="content">
+<div class="row">
+  <div id="news">
+  	<h1>Services </h1>
+    <h2>Car Sales</h2>
+ 
+    <p>As an approved, trusted and award-winning car supermarket, we pride ourselves 
+    on the kind, welcoming and helpful culture we have created for our customers.<br>
+     <a href="#" id="car-sales-button" oncLick="show('car-sales')" >Show More</a></p>
+     <p style="display:none" id="car-sales">
+     Proudly, we have a growing list of customers who have bought multiple cars from 
+    us over the years, many who have built long-term relationships with our team, which
+     is a strong testimony to our approach to finding the right cars for our customers. <a href="car-sales.html" >Read More</a><br><br>
+     <a href="#" oncLick="hide('car-sales')" id="showMoreButton">Hide</a></p>
+     
+    <br>
+    <h2>Car Maintenance</h2>
+  
+    <p>When your car isn’t performing like new, you want to take it to a
+     knowledgeable, talented professional equipped with the tools that can 
+     find and solve your problem to the highest standard. Perfectly.<br>
+     <a href="#" oncLick="show('maintenance')" id="maintenance-button">Show More</a></p>
+
+     <p style="display:none" id="maintenance">You want someone honest who digs deep inside your vehicle to find the 
+    source of the problem. Most importantly, you need someone who is patient
+     and who doesn’t lose their cool with you. Someone who explains the diagnosis
+      in easy-to-use-and-understand lingo to give you the confidence to make an 
+      informed decision. <a href="car-maintenance.html" >Read More</a><br>
+     <a href="#" oncLick="hide('maintenance')" id="showMoreButton">Hide</a></p>
+     
+    <br>
+    <h2>Car Imports</h2>
+  
+   <p>Importing cars to USA borders is a process that you can’t just put on cruise control. It’s even more difficult to get the key to that 
+   car and drive it across the USA border to importing victory lane.
+    <br>
+     <a href="#" oncLick="show('imports')" id="imports-button">Show More</a></p>
+
+     <p style="display:none" id="imports">Cars are the single most popular purchase for American consumers. They crave cars so much that
+     they demand brands from all over the world. That’s where you come in. Importing cars from Europe,
+      Germany, Japan and more is a big part of that American consumer car demand process. Learn how to 
+      navigate US car import law below in the following four ways. <a href="car-imports.html" >Read More</a><br>
+      <a href="#" oncLick="hide('imports')" id="showMoreButton">Hide</a></p>
+    
+    
+  </div>
+  
+</div>
+
+
+</div>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+<script type="text/javascript">
+  function show(id){
+    document.getElementById(id).style.display = "block";
+    document.getElementById(id+"-button").style.display = "none";
+  }
+  function hide(id){
+    document.getElementById(id).style.display = "none";
+    document.getElementById(id+"-button").style.display = "block";
+  }
+</script>
+</html>
